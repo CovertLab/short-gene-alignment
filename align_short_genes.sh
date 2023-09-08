@@ -1,0 +1,5 @@
+python get_rna_sequences.py corrected_rnaseq_read_counts_table.tsv ref/ecoli_protein_coding_genes.seq short_rna_sequences.tsv
+python manual_alignment.py reads/SRR4019079.fastq short_rna_sequences.tsv
+python manual_alignment.py reads/SRR4019080.fastq short_rna_sequences.tsv
+python manual_alignment.py reads/SRR4019081.fastq short_rna_sequences.tsv
+python compare_read_counts.py corrected_rnaseq_read_counts_table.tsv
