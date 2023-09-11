@@ -64,9 +64,9 @@ def compare_read_counts(rna_table_path):
     ax.legend(bbox_to_anchor=(1.1, 1))
 
     plt.tight_layout()
-    plt.savefig('compare_read_counts.png')
+    plt.savefig(os.path.join('results', 'compare_read_counts.png'))
 
-    with open('rna_read_counts.tsv', 'w') as f:
+    with open(os.path.join('results', 'rna_read_counts.tsv'), 'w') as f:
         f.write('rna_id\tread_counts\n')
         for k, v in rna_id_to_actual_read_counts.items():
             f.write(f'{k}\t{v}\n')
