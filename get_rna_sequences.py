@@ -1,4 +1,7 @@
 #! /usr/bin/env python
+"""
+Extract sequences of specific RNAs from a .seq file
+"""
 import argparse
 
 def get_rna_sequences(rna_table_path, seq_path, output_path):
