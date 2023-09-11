@@ -16,7 +16,7 @@ def compare_read_counts(rna_table_path):
     for filename in os.listdir('results'):
         results_file = os.path.join('results', filename)
 
-        if os.path.isfile(results_file) and results_file.endswith('.tsv'):
+        if os.path.isfile(results_file) and results_file.endswith('short_rna_read_counts.tsv'):
             with open(results_file, 'r') as f:
                 lines = f.readlines()[1:]
                 rna_ids = [line.split('\t')[0] for line in lines]
@@ -66,7 +66,7 @@ def compare_read_counts(rna_table_path):
     plt.tight_layout()
     plt.savefig(os.path.join('results', 'compare_read_counts.png'))
 
-    with open(os.path.join('results', 'rna_read_counts.tsv'), 'w') as f:
+    with open(os.path.join('results', 'mean_rna_read_counts.tsv'), 'w') as f:
         f.write('rna_id\tread_counts\n')
         for k, v in rna_id_to_actual_read_counts.items():
             f.write(f'{k}\t{v}\n')
