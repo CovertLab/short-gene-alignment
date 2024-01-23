@@ -1,4 +1,4 @@
-# Rend-seq-plots
+# Manual alignment of short *E. coli* genes to sequencing data
 
 This repository contains the code used to manually align RNA-Seq reads to
 short (<100nt) genes in the *E. coli* genome that are typically misreported
