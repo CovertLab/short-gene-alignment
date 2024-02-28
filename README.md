@@ -6,7 +6,7 @@ by RNA-Seq algorithms to have zero read counts. The data generated
 by the code were used as supporting figures
 for Sun et al., "Cross-evaluation of E. coli’s operon structures
 via a whole-cell model suggests alternative cellular benefits
-for low- versus high-expressing operons" (2023), in review.
+for low- versus high-expressing operons", Cell Systems, 2024.
 
 You can reach out to ggsun AT stanford.edu for any questions
 about the code in this repository.
@@ -18,7 +18,7 @@ all of the required packages by running
 pip install -r requirements.txt
 ```
 
-To regenerate all short gene alignment data used in Sun et al. (2023), run
+To regenerate all short gene alignment data used in Sun et al. (2024), run
 
 ```shell
 bash runscripts/align_short_genes.sh
